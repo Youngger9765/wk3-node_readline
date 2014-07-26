@@ -4,7 +4,7 @@ var u, p, verifycode;
 var rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
-    // tab 自?完成
+    // tab 完成
     completer: function(line) {
         var completions = 'login logout getFriends getGroups'.split(' ')
         var hits = completions.filter(function(c) { return c.indexOf(line) == 0 })
